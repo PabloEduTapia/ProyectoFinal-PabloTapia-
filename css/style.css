@@ -1,0 +1,65 @@
+html,
+body {
+    background-color: grey;
+    height: 100%;
+}
+
+.logo{
+    width: 60px;
+    align-items: center;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.news{
+    padding: 2rem 0;
+}
+.news1{ 
+ border-right: solid red 3px;
+}
+
+.news img{
+width: 40%;
+height: 45%;
+}
+
+#footer {
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2rem 0;    
+}
+
+#footer a{
+    color: red;
+}
+#footer img{
+    width: 18px;
+    height: 18px;
+}
+#tour{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#videos{
+    padding: 5rem 0;
+}
+
+.vid1{
+    padding: 5rem 0;
+}
+.newsdim{
+    padding: 3rem 0;
+}
+#form{
+    padding: 10rem 0;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <title>DaftPunk</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand custom" href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">  
+            <li class="nav-item active">    
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tour.html">TOUR </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music.html">MUSICA </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">CONTACTO </a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<section id="form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                          <h3>Registrarse</h3>  
+                          <h6 class="font-weight-light">Mantente al tanto de nuestras actividades completando el siguiente formulario.</h6>                    
+                        </div>
+                        
+                        <div class="card-body bg-secondary">
+                            <form name="my-form" onsubmit="return validform()" action="success.php" method="GET" enctype="multipart/form-data">
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Nombre</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="nombre">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Apellido</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="apellido">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Edad</label>
+                                    <div class="col-md-6">                                     
+                                <input type="number" id="qty_input" class="form-control form-control-sm" value="1" min="1">                                
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">E-Mail</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="email" placeholder="@">
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Tiene alguna sugerencia:</label>
+                                    <div class="col-md-6">
+                                        <textarea class="form-control" placeholder="Escriba aqui..." rows="5" name="reseña"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Sexo</label>
+                                    <div class="col-md-6">
+                                        <div class="form-check-inline">
+                                          <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Hombre
+                                          </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                          <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Mujer
+                                          </label>
+                                        </div>                                       
+                                        </div>
+                                    </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Como nos conociste:</label>
+                                    <div class="col-md-6">
+                                        <div class="form-group">  
+                                        <select class="form-control" id="sel1">
+                                          <option value="tv">En la radio/TV</option>
+                                                <option value="internet">A traves de internet</option>
+                                                <option value="amigo">A traves de un amigo</option>
+                                                <option value="otro">Otros</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right font-weight-bold">Acepta términos y condiciones</label>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="acepta" value="1" />
+                                    </div>
+                                </div>
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit" class="btn btn-dark">
+                                        Registrarme
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <footer id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <p>© 2019 by DAFT PUNK </p>                    
+                </div> 
+                <div class="col-sm-3">
+                  <a href=""><img src="img/fb.png" alt="Logo" class="logo"> facebook</a>
+                </div>             
+                <div class="col-sm-3">               
+                        <a href=""><img src="img/tw.png" alt="Logo" class="logo"> twitter</a>
+                </div>       
+                <div class="col-sm-3"> 
+                        <a href=""><img src="img/yt.png" alt="Logo" class="logo"> youtube</a>        
+                </div>                
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script type="js/bootstrap.min.js"></script>  
+  </body>
+</html>
